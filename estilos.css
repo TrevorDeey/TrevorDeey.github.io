@@ -1,0 +1,564 @@
+html {
+	scroll-behavior: smooth;
+	transition: background-color 0.5s ease-out, font-size 0.2s linear;
+  }
+
+/* Estilos generales */
+
+body {
+	
+	font-family: 'SF Pro Display', 'Segoe UI', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #f2f2f2;
+	cursor: url('./assets/logomanu.png'), auto ;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #ff3b30;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Estilos del encabezado */
+
+.encabezado {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .logo-y-titulo {
+	display: flex;
+	align-items: center;
+  }
+  
+  .logo-y-titulo img {
+	width: 150px;
+	margin-right: 10px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .logo-y-titulo img:hover {
+	transform: rotate(360deg);
+  }
+  
+  h1 {
+	font-size: 36px;
+	margin: 0;
+  }
+  
+  .texto-adicional {
+	display: flex;
+	align-items: center;
+  }
+  
+  .pPrincipal {
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+  }
+/* barra menu */
+.barra-menu {
+    background-color: #ff3b30;
+    color: #fff;
+    font-size: 18px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.barra-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.barra-menu li {
+    display: inline-block;
+    margin: 0 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.barra-menu li a {
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.barra-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Estilos de la sección de servicios */
+
+
+#servicios {
+	background-color: #fff;
+	padding: 25px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#servicios h2 {
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 50px;
+}
+
+/* Estilos de los servicios */
+
+ /* Estilos para el efecto de máquina de escribir */
+ .typewriter {
+	overflow: hidden; /* Evita que el contenido se muestre al principio */
+	border-right: .15em solid orange; /* Crea un efecto de cursor parpadeante */
+	white-space: nowrap; /* Evita que el texto se desborde */
+	margin: 0 auto; /* Centra el texto */
+	letter-spacing: .15em; /* Ajusta el espacio entre letras */
+	animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Agrega la animación */
+}
+
+/* Animación de máquina de escribir */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* Animación de cursor parpadeante */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: red }
+}
+
+
+.servicio {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+	width: 100%;
+	max-width: 900px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background-color: #fff;
+	transform: translateY(0);
+transition: transform 0.3s ease-in-out;
+}
+
+.servicio:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	transform: translateY(-10px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio img {
+	max-width: 50%;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	object-fit: cover;
+	height: 100%;
+}
+
+.servicio .descripcion {
+	background-color: #f5f5f7;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	padding: 20px;
+	flex: 1;
+}
+
+.servicio h3 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ff3b30;
+	font-family: "Helvetica Neue", sans-serif;
+	margin-bottom: 20px;
+	transition: color 0.3s ease-in-out;
+}
+
+.servicio h3:hover {
+	color: #ff8c00;
+  }
+.servicio p {
+	font-size: 18px;
+	color: #666;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+.servicio-fotografia {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.servicio-fotografia .descripcion {
+	order: -1;
+}
+
+.servicio-video {
+	background-color: #333;
+	color: #fff;
+}
+
+.servicio-video h3 {
+	color: #fff;
+	
+}
+
+.servicio-live-streaming {
+	background-color: #f8dc81;
+	color: #333;
+}
+
+.servicio-drones {
+	background-color: #d3e3f3;
+	color: #333;
+}
+
+.servicio-edicion-video {
+	background-color: #f0a5b8;
+	color: #fff;
+}
+
+	
+
+.portfolio {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio li {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    position: relative;
+}
+
+.portfolio li:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.portfolio img {
+    display: block;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .overlay span {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .overlay:hover span {
+    transform: scale(1.2);
+}
+
+
+.testimonios {
+	padding: 50px 0;
+	position: relative;
+  }
+  
+  .testimonios ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .testimonios li {
+	flex: 1;
+	max-width: 400px;
+	margin: 0 20px;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	transform: translateZ(0);
+	position: relative;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+  }
+  
+  .testimonios li:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonios p {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 20px;
+  }
+  
+  .testimonios p + p {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #ff3b30;
+  }
+  
+  .testimonios::before {
+	content: "";
+	display: block;
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-top-left-radius: 50% 15%;
+	border-top-right-radius: 50% 15%;
+  }
+  
+  .testimonios::after {
+	content: "";
+	display: block;
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+	border-bottom-left-radius: 50% 15%;
+	border-bottom-right-radius: 50% 15%;
+  }
+  
+
+/* Estilos de las preguntas frecuentes */
+
+.preguntas-frecuentes {
+	padding: 50px 0;
+}
+
+.preguntas-frecuentes h3 {
+	margin-top: 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: #ff3b30;
+}
+
+/* Estilos del formulario de contacto */
+
+.contacto {
+	padding: 50px 0;
+}
+
+.contacto label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ff3b30;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-family: 'SF Pro Display', 'Segoe UI', sans-serif;
+}
+
+.contacto textarea {
+	height: 150px;
+}
+
+.contacto input[type="submit"] {
+	background-color: #ff3b30;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.contacto input[type="submit"]:hover {
+	background-color: #e60000;
+}
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+	.servicio {
+		flex-direction: column;
+	}
+
+	.servicio img {
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.servicio .descripcion {
+		text-align: center;
+	}
+
+	.portfolio li {
+		flex: 1 0 100%;
+		max-width: 100%;
+	}
+
+	.testimonios li {
+		margin: 20px 0;
+	}
+}
+/* elementos button */
+button {
+	background-color: #ff3b30;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: #e60000;
+}
+
+
+/*lementos input de tipo submit para que se vean igual que los botones*/
+
+input[type="submit"] {
+	background-color: #ff3b30;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover {
+	background-color: #e60000;
+}
+
+/*imágenes de los servicios para hacer que se vean más suaves:*/
+
+.servicio img {
+	flex: 1;
+	max-width: 50%;
+	margin-right: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* formulario */
+.contacto label,
+.contacto input,
+.contacto textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family: 'SF Pro Display', 'Segoe UI', sans-serif;
+}
+
+.contacto textarea {
+	height: 150px;
+	resize: vertical;
+}
+
+.contacto input[type="submit"] {
+	margin-top: 20px;
+}
+header {
+	padding: 10px;
+}
+
