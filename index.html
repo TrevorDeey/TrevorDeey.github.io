@@ -10,13 +10,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 	<script src="js.js"></script>
 	
+	  
+	
 </head>
-<body>
+<body id="pagina">
 	<header class="scrolled">
 		<div class="encabezado">
 		  <div class="logo-y-titulo">
 			<a href="/">
-			  <img src="./assets/logoCismaAudioVisuales.png" alt="">
+			  <img src="./assets/logoCismaAudioVisuales.png" alt="" >
 			</a>
 		  </div>
 		  <div class="texto-adicional">
@@ -33,7 +35,7 @@
 		  </nav>
 		</div>
 	  </header>
-	<main>
+
 		<section id="servicios" class="servicios" data-aos="fade-up">
 			<h2><span class="typewriter">Servicios</span></h2>
 			<ul>
@@ -102,7 +104,7 @@
 			</ul>
 		</section>
 		<section id="testimonios" class="testimonios">
-			<h2>Testimonios</h2>
+			<h2><span class="typewriter">Testimonios</span></h2>
 			<ul>
 				<li>
 					<p>"Cisma Audiovisuales hizo un trabajo increíble en nuestro evento. Los videos y las fotos son de alta calidad y capturaron perfectamente la esencia de nuestro evento. ¡Los recomiendo altamente!"</p>
@@ -114,9 +116,9 @@
 				</li>
 			</ul>
 		</section>
-		<section id="preguntas-frecuentes" class="preguntas-frecuentes">
-			<h2>Preguntas frecuentes</h2>
-			<ul>
+		<section id="preguntas-frecuentes">
+			<h2><span class="typewriter">Preguntas frecuentes</span> </h2>
+			<ul class="preguntas-frecuentes">
 				<li>
 					<h3>¿Cuánto tiempo tardan en entregar los videos y las fotos?</h3>
 					<p>El tiempo de entrega depende del tamaño y la complejidad del proyecto, pero generalmente entregamos los videos y las fotos en un plazo de 2 a 4 semanas después del evento.</p>
@@ -132,17 +134,34 @@
 			</ul>
 		</section>
 		<section id="contacto" class="contacto">
-			<h2>Contacto</h2>
+			<h2 id="contactoh2"><span class="typewriter">Contacto</span> </h2>
+			<p>Si está interesado en contratar nuestros servicios, complete el siguiente formulario y nos pondremos en contacto con usted lo antes posible. Ofrecemos servicios de video y fotografía profesional para eventos corporativos, incluyendo edición de video y live streaming.</p>
 			<form action="enviar.php" method="post">
+			  <div class="form-group">
 				<label for="nombre">Nombre:</label>
 				<input type="text" id="nombre" name="nombre" required>
+			  </div>
+			  <div class="form-group">
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" required>
+			  </div>
+			  <div class="form-group">
 				<label for="mensaje">Mensaje:</label>
 				<textarea id="mensaje" name="mensaje" required></textarea>
-				<input type="submit" value="Enviar">
+			  </div>
+			  <div class="form-group">
+				<button type="submit">Enviar</button>
+			  </div>
 			</form>
-		</section>
+			<p>También puede contactarnos directamente por correo electrónico a <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a> o por teléfono al <a href="tel:+1234567890">+34647920849</a>.</p>
+		  </section>
+		  <div class="whatsapp">
+			<a href="https://wa.me/+34645218764" target="_blank">
+			  <img src="./assets/WhatsApp.svg.webp" alt="WhatsApp">
+			</a>
+		  </div>
+
+		  
 	</main>
 	
 	
@@ -160,6 +179,7 @@
 });
 	  </script>
 	  
-<script src="js.js"></script>
+
 </body>
+<script src="js.js"></script>
 </html>
